@@ -1,24 +1,3 @@
-# ecologystudy
+#### 后台管理系统，主要目的用于自己搭建简单的模板放在项目中使用
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+#### 前端使用的技术栈主要是 vue 全家桶（vue-cli、vue-router、vuex、axios）、ElementUI，包括一些常用的 vue 生态的插件，例如 lodash；后端主要是 nodejs（用的 express 框架），数据库是 mysql
