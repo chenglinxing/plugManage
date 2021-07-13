@@ -21,13 +21,13 @@
       </el-tab-pane>
     </el-tabs>
 
-    <el-button @click="callCamera">开启摄像头</el-button>
+    <!-- <el-button @click="callCamera">开启摄像头</el-button> -->
     <!-- <el-button @click="changeDevice" style="margin-right: 10px"
       >切换摄像头</el-button
     >
     <el-button @click="closeCamera">关闭摄像头</el-button>
     <canvas ref="canvas" width="640" height="480"></canvas> -->
-    <video ref="video" width="640" height="480" autoplay></video>
+    <!-- <video ref="video" width="640" height="480" autoplay></video> -->
   </div>
 </template>
 
@@ -66,19 +66,19 @@ export default {
     },
 
     /*开启摄像头*/
-    callCamera() {
-      navigator.mediaDevices
-        .getUserMedia({
-          video: true,
-        })
-        .then((success) => {
-          this.$refs["video"].srcObject = success;
-          this.$refs["video"].play();
-        })
-        .catch((error) => {
-          console.error("摄像头开启失败，请检查摄像头是否可用！");
-        });
-    },
+    // callCamera() {
+    //   navigator.mediaDevices
+    //     .getUserMedia({
+    //       video: true,
+    //     })
+    //     .then((success) => {
+    //       this.$refs["video"].srcObject = success;
+    //       this.$refs["video"].play();
+    //     })
+    //     .catch((error) => {
+    //       console.error("摄像头开启失败，请检查摄像头是否可用！");
+    //     });
+    // },
   },
   created() {
     this.init();
